@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 //package connectivity;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -23,9 +19,9 @@ public class Connectivity extends JFrame {
     private DefaultTableModel model;
     private JButton buyButton, refreshButton, addButton;
     
-    private final String URL = "jdbc:mysql://localhost:3306/shopdb";
+    private final String URL = "db url";
     private final String USER = "root";
-    private final String PASSWORD = "sql*pass"; // replace this
+    private final String PASSWORD = "password"; // replace this
     
     public Connectivity() { 
         setTitle("Product Shop");
@@ -144,7 +140,6 @@ public class Connectivity extends JFrame {
     }
 
     public static void main(String[] args) {
-        // TODO code application logic here
         SwingUtilities.invokeLater(() -> new Connectivity().setVisible(true));
         
     }
